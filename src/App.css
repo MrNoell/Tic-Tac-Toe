@@ -1,5 +1,10 @@
 .App {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +40,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#board { 
+  display: grid;
+  grid-template-rows: 100px 100px 100px 50px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+#clear{
+  margin-top: 10px;
+  grid-column: 1/4;
 }
